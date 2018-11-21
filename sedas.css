@@ -349,6 +349,22 @@ body .blood.active, body .hight.active, body .bmi.active, body .weight.active {
     padding: 10px;
   }
 
+    body .blood.active:hover,
+    {
+      box-shadow: none;
+    }
+    body .hight.active:hover
+    {
+      box-shadow: none;
+    }
+    body .bmi.active:hover
+    {
+      box-shadow: none;
+    }
+    body .weight.active:hover
+    {
+      box-shadow: none;
+    }
   body .hight {
     grid-column: 1 / 1;
     grid-row: 8 / 9;
