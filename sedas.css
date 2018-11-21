@@ -569,6 +569,12 @@ body .blood.active, body .hight.active, body .bmi.active, body .weight.active {
   margin: 6px;
 }
 
+.blood.active:hover, .bmi.active:hover, .weight.active:hover, .hight.active:hover {
+  -webkit-box-shadow: 0px 7px 22px -5px rgba(0,0,0,0.2);
+  -moz-box-shadow: 0px 7px 22px -5px rgba(0,0,0,0.2);
+  box-shadow: 0px 7px 22px -5px rgba(0,0,0,0.2);
+}
+
 .title {
   color: #6e6e6e;
   font-size: 15px;
