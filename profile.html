@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title></title>
+    <link rel="stylesheet" href="./sedas.css" />
+    <link rel="stylesheet" href="./css/all.css" />
+    <link
+      rel="stylesheet"
+      href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Alegreya+Sans|Quicksand|Source+Sans+Pro"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="grid-container">
+        <div class="sidebar">
+          <div class="logo">SEDAS</div>
+          <div class="sidebar-items">
+            <a href="./guidance.html"><i class="fas fa-user-md"></i> Start</a>
+          </div>
+          <div class="sidebar-items active">
+            <a href="./profile.html"
+              ><i class="far fa-user-circle"></i> Profile</a
+            >
+          </div>
+          <div class="sidebar-items">
+            <a href=""><i class="fas fa-capsules"></i> Dose</a>
+          </div>
+          <div class="sidebar-items">
+            <a href=""><i class="fas fa-star-half-alt"></i> Rating</a>
+          </div>
+          <div class="sidebar-items">
+            <a href=""><i class="fas fa-wrench"></i> About</a>
+          </div>
+        </div>
+        <div class="avator"><img src="./images/profile.jpg" alt="" /></div>
+        <div class="patientName">
+          Charlotte Smith
+          <span class="female"><i class="fas fa-venus"></i></span>
+        </div>
+        <div class="hide"><i class="fas fa-eye-slash"></i> Hide</div>
+        <div class="age">
+          <div class="pro">age <span class="input">26</span></div>
+          <div class="pro">Birth <span class="input">Dec 19th, 1992</span></div>
+        </div>
+        <div class="contact">
+          <div class="pro">Contact <span class="input">+888 88 888</span></div>
+          <div class="pro">
+            Address <span class="input">New York, NY 10000</span>
+          </div>
+        </div>
+        <div class="issue">
+          <h3>Health issues</h3>
+          <span class="time">NOV 19TH 04:51 PM</span>
+          <p>The patient need sedaton.</p>
+        </div>
+
+        <div class="sedation">
+          <div class="sedation-container">
+            <h1>Assistant</h1>
+            <div class="score"><i class="fas fa-poll-h"></i>SCORE</div>
+            <div id="drug">Midazolam</div>
+            <div id="suggest">Sugessted</div>
+            <input type="submit" name="score" value="Calculate Dose" />
+          </div>
+
+          <div class="score-panel">
+            <h1>Allergy</h1>
+            <div class="panel-item active">
+              <i class="fas fa-check-circle"></i> Drug allergy
+            </div>
+            <div class="panel-item">
+              <i class="far fa-circle"></i> Food Allergy
+            </div>
+            <div class="panel-item active">
+              <i class="fas fa-check-circle"></i> Insect Allergy
+            </div>
+            <div class="panel-item active">
+              <i class="fas fa-check-circle"></i> Latex Allergy
+            </div>
+            <div class="panel-item">
+              <i class="far fa-circle"></i> Mold Allergy
+            </div>
+            <div class="panel-item">
+              <i class="far fa-circle"></i> Pet Allergy
+            </div>
+            <div class="panel-item">
+              <i class="far fa-circle"></i> Pollen Allergy
+            </div>
+          </div>
+
+          <div class="score-panel">
+            <h1>Background</h1>
+            <div class="panel-item active">
+              <i class="fas fa-check-circle"></i> Tobacco
+            </div>
+            <div class="panel-item">
+              <i class="far fa-circle"></i> Benzodiazephi Use
+            </div>
+            <div class="panel-item active">
+              <i class="far fa-dot-circle"></i> Opiod Use
+            </div>
+          </div>
+
+          <div class="score-panel">
+            <h1>ASA Level</h1>
+            <div class="panel-item">
+              <span id="level">Level I</span><br />
+              Normal healthy patient
+            </div>
+          </div>
+        </div>
+
+        <div class="blood active">
+          <span class="title">Blood Pressure</span>
+          <div class="read">
+            <i class="fas fa-heartbeat"></i>100/90<span class="unit"
+              >mm/hg</span
+            >
+          </div>
+        </div>
+
+        <div class="hight active">
+          <span class="title">Hight</span>
+          <div class="read"><i class="fas fa-male"></i>5'7"</div>
+        </div>
+
+        <div class="bmi active">
+          <span class="title">BMI</span>
+          <div class="read"><i class="far fa-smile"></i>20</div>
+        </div>
+
+        <div class="weight active">
+          <span class="title">weight</span>
+          <div class="read">
+            <i class="fas fa-weight"></i>120<span class="unit">lb</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
