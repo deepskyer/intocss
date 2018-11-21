@@ -82,35 +82,81 @@
             <div class="row setup-content" id="step-1">
               <div class="guide">
                 <div class="col-md-12">
-                  <h3>Step 1</h3>
-                  <div class="form-group">
-                    <label class="control-label">First Name</label>
-                    <input
-                      maxlength="100"
-                      type="text"
-                      required="required"
-                      class="form-control"
-                      placeholder="Enter First Name"
-                    />
+                  <h3>Basic Information</h3>
+
+                  <div class="row">
+                    <div class="form-group col-xs-6">
+                    <label class="control-label" for="last_name">Last Name</label>
+                    <div >
+                    <input id="last_name" name="last_name" placeholder="Last Name" type="text" class="form-control" required="required">
+                    </div>
+                    </div>
+                    <div class="form-group col-xs-6">
+                    <label for="first_name" class="control-label">First Name</label>
+                    <div >
+                    <input id="first_name" name="first_name" placeholder="First Name" type="text" class="form-control" required="required">
+                    </div>
+                    </div>
                   </div>
-                  <div class="form-group">
-                    <label class="control-label">Last Name</label>
-                    <input
-                      maxlength="100"
-                      type="text"
-                      required="required"
-                      class="form-control"
-                      placeholder="Enter Last Name"
-                    />
-                  </div>
-                  <div class="form-group">
-                    <label class="control-label">Address</label>
-                    <textarea
-                      required="required"
-                      class="form-control"
-                      placeholder="Enter your address"
-                    ></textarea>
-                  </div>
+
+
+
+
+  <div class="form-group">
+    <label for="gender" class="control-label">Gender</label>
+    <div >
+      <label class="radio-inline">
+        <input type="radio" name="gender" value="male" checked>
+              Male
+      </label>
+      <label class="radio-inline">
+        <input type="radio" name="gender" value="female">
+              Female
+      </label>
+      <label class="radio-inline">
+        <input type="radio" name="gender" value="other">
+              Other
+      </label>
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="birthday" class="control-label">Birthday</label>
+    <div >
+      <input id="birthday" name="birthday" placeholder="MM/DD/YY" type="text" class="form-control" required="required">
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="form-group col-xs-6">
+      <label for="hight" class="control-label">Hight</label>
+      <div >
+        <input id="hight" name="hight" placeholder="(cm)" type="text" class="form-control" required="required">
+      </div>
+    </div>
+    <div class="form-group col-xs-6">
+      <label for="weight" class="control-label">Weight</label>
+      <div >
+        <input id="weight" name="weight" placeholder="(lb)" type="text" class="form-control" required="required">
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="form-group col-xs-6">
+      <label for="bp" class="control-label">Blood Pressure</label>
+      <div >
+        <input id="bp" name="bp" placeholder="mm/hg" type="text" class="form-control" required="required">
+      </div>
+    </div>
+    <div class="form-group col-xs-6">
+      <label for="bmi" class="control-label">BMI</label>
+      <div >
+        <input id="bmi" name="bmi" placeholder="BMI" type="text" class="form-control" required="required">
+      </div>
+    </div>
+  </div>
+
+
                   <button
                     class="btn btn-primary nextBtn btn-lg pull-right"
                     type="button"
@@ -125,25 +171,32 @@
                 <div class="col-md-12">
                   <h3>Step 2</h3>
                   <div class="form-group">
-                    <label class="control-label">Company Name</label>
-                    <input
-                      maxlength="200"
-                      type="text"
-                      required="required"
-                      class="form-control"
-                      placeholder="Enter Company Name"
-                    />
-                  </div>
-                  <div class="form-group">
-                    <label class="control-label">Company Address</label>
-                    <input
-                      maxlength="200"
-                      type="text"
-                      required="required"
-                      class="form-control"
-                      placeholder="Enter Company Address"
-                    />
-                  </div>
+    <label for="tobacco" class="control-label"></label>
+    <div>
+      <label class="checkbox-inline">
+        <input type="checkbox" name="tobacco" value="tobacco">
+              Tobacco Use
+      </label>
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="benzo" class="control-label"></label>
+    <div>
+      <label class="checkbox-inline">
+        <input type="checkbox" name="benzo" value="benzo">
+              Benzodiazephi Use
+      </label>
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="opiod" class="control-label"></label>
+    <div>
+      <label class="checkbox-inline">
+        <input type="checkbox" name="opiod" value="opiod">
+              Opiod Use
+      </label>
+    </div>
+  </div>
                   <button
                     class="btn btn-primary nextBtn btn-lg pull-right"
                     type="button"
@@ -156,7 +209,70 @@
             <div class="row setup-content" id="step-3">
               <div class="guide">
                 <div class="col-md-12">
-                  <h3>Step 3</h3>
+                  <h3>Allergies</h3>
+                  <div class="form-group">
+
+    <div>
+      <label class="checkbox-inline">
+        <input type="checkbox" name="drug_a" value="drug_a">
+              Drug allergy
+      </label>
+    </div>
+  </div>
+  <div class="form-group">
+
+    <div>
+      <label class="checkbox-inline">
+        <input type="checkbox" name="food_a" value="food_a">
+              Food Allergy
+      </label>
+    </div>
+  </div>
+  <div class="form-group">
+
+    <div>
+      <label class="checkbox-inline">
+        <input type="checkbox" name="insect_a" value="insect_a">
+              Insect Allergy
+      </label>
+    </div>
+  </div>
+  <div class="form-group">
+
+    <div>
+      <label class="checkbox-inline">
+        <input type="checkbox" name="latex_a" value="latex_a">
+              Latex Allergy
+      </label>
+    </div>
+  </div>
+  <div class="form-group">
+
+    <div>
+      <label class="checkbox-inline">
+        <input type="checkbox" name="mold_a" value="mold_a">
+              Mold Allergy
+      </label>
+    </div>
+  </div>
+  <div class="form-group">
+
+    <div>
+      <label class="checkbox-inline">
+        <input type="checkbox" name="pet_a" value="pet_a">
+              Pet Allergy
+      </label>
+    </div>
+  </div>
+  <div class="form-group">
+
+    <div>
+      <label class="checkbox-inline">
+        <input type="checkbox" name="pollen_a" value="pollen_a">
+              Pollen Allergy
+      </label>
+    </div>
+  </div>
                   <button
                     class="btn btn-success btn-lg pull-right"
                     type="submit"

@@ -32,7 +32,7 @@ body {
 .stepbystep {
   grid-column: 2 / -1;
   grid-row: 1 / -1;
-  margin: 50px auto;
+  margin: 20px auto;
 }
 
 .sidebar {
@@ -632,6 +632,7 @@ body .blood.active, body .hight.active, body .bmi.active, body .weight.active {
   text-transform: uppercase;
   width: 100%;
   font-size: 12px;
+  border-radius: 4px;
 }
 
 #suggest + input[type="submit"]:hover {
