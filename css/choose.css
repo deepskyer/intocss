@@ -16,25 +16,25 @@
 .left .btn {
   background: #5bb2fa;
   border-style: none;
-  -webkit-box-shadow: 0px 4px 17px 0px rgba(91,178,250,0.26);
-  -moz-box-shadow: 0px 4px 17px 0px rgba(91,178,250,0.26);
-  box-shadow: 0px 4px 17px 0px rgba(91,178,250,0.26);
+  -webkit-box-shadow: 0px 4px 17px 0px rgba(91,178,250,0.5);
+  -moz-box-shadow: 0px 4px 17px 0px rgba(91,178,250,0.5);
+  box-shadow: 0px 4px 17px 0px rgba(91,178,250,0.5);
 }
 
 .left .btn:hover {
   background: #5bb2fa;
   border-style: none;
-  -webkit-box-shadow: 0px 4px 17px 0px rgba(91,178,250,0.34);
-  -moz-box-shadow: 0px 4px 17px 0px rgba(91,178,250,0.34);
-  box-shadow: 0px 4px 17px 0px rgba(91,178,250,0.34);
+  -webkit-box-shadow: 0px 4px 17px 0px rgba(91,178,250,0.8);
+  -moz-box-shadow: 0px 4px 17px 0px rgba(91,178,250,0.8);
+  box-shadow: 0px 4px 17px 0px rgba(91,178,250,0.8);
 }
 
 .left .btn:focus {
   background: #5bb2fa;
   border-style: none;
-  -webkit-box-shadow: 0px 4px 17px 0px rgba(91,178,250,0.34);
-  -moz-box-shadow: 0px 4px 17px 0px rgba(91,178,250,0.34);
-  box-shadow: 0px 4px 17px 0px rgba(91,178,250,0.34);
+  -webkit-box-shadow: 0px 4px 17px 0px rgba(91,178,250,0.5);
+  -moz-box-shadow: 0px 4px 17px 0px rgba(91,178,250,0.5);
+  box-shadow: 0px 4px 17px 0px rgba(91,178,250,0.5);
 }
 
 .right .btn {
