@@ -15,31 +15,6 @@
   text-align: center;
 }
 
-.form-signin .btn-primary {
-  background: #5bb2fa;
-  border-style: none;
-  -webkit-box-shadow: 0px 4px 17px 0px rgba(91,178,250,0.26);
-  -moz-box-shadow: 0px 4px 17px 0px rgba(91,178,250,0.26);
-  box-shadow: 0px 4px 17px 0px rgba(91,178,250,0.26);
-}
-
-.form-signin .btn-primary:hover {
-  background: #5bb2fa;
-  border-style: none;
-  -webkit-box-shadow: 0px 4px 17px 0px rgba(91,178,250,0.34);
-  -moz-box-shadow: 0px 4px 17px 0px rgba(91,178,250,0.34);
-  box-shadow: 0px 4px 17px 0px rgba(91,178,250,0.34);
-}
-
-.form-signin .btn-primary:focus {
-  background: #5bb2fa;
-  border-style: none;
-  -webkit-box-shadow: 0px 4px 17px 0px rgba(91,178,250,0.34);
-  -moz-box-shadow: 0px 4px 17px 0px rgba(91,178,250,0.34);
-  box-shadow: 0px 4px 17px 0px rgba(91,178,250,0.34);
-}
-
-
 .pro {
   font-family: Sans-serif;
   margin: 0;
@@ -62,9 +37,35 @@ body {
   background-color: #f5f5f5;
 }
 
+.form-signin .btn-primary {
+  background: #5bb2fa;
+  border-style: none;
+  -webkit-box-shadow: 0px 4px 17px 0px rgba(91,178,250,0.26);
+  -moz-box-shadow: 0px 4px 17px 0px rgba(91,178,250,0.26);
+  box-shadow: 0px 4px 17px 0px rgba(91,178,250,0.26);
+  margin-top: 40px;
+}
+
+.form-signin .btn-primary:hover {
+  background: #5bb2fa;
+  border-style: none;
+  -webkit-box-shadow: 0px 4px 17px 0px rgba(91,178,250,0.34);
+  -moz-box-shadow: 0px 4px 17px 0px rgba(91,178,250,0.34);
+  box-shadow: 0px 4px 17px 0px rgba(91,178,250,0.34);
+}
+
+.form-signin .btn-primary:focus {
+  background: #5bb2fa;
+  border-style: none;
+  -webkit-box-shadow: 0px 4px 17px 0px rgba(91,178,250,0.34);
+  -moz-box-shadow: 0px 4px 17px 0px rgba(91,178,250,0.34);
+  box-shadow: 0px 4px 17px 0px rgba(91,178,250,0.34);
+}
+
+
 .grid-container {
   display: grid;
-  grid-template-columns: auto 330px;
+  grid-template-columns: 500px auto;
   background-color: #ffffff;
   background-image: url("../images/sedas.jpg");
   background-repeat: no-repeat;
@@ -74,11 +75,11 @@ body {
 }
 
 .form-signin {
-  grid-column: 2/3;
-  width: 330px;
+  grid-column: 1/2;
+  width: auto;
   background: #ffffff;
+  padding: 0 100px;
   opacity: 0.9;
-  padding: 40px;
 }
 
 @media only screen and (max-width: 480px) {

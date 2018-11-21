@@ -1,6 +1,32 @@
 .stepwizard-step p {
   margin-top: 10px;
 }
+
+.stepbystep .btn-primary {
+  background: #5bb2fa;
+  border-style: none;
+  -webkit-box-shadow: 0px 4px 17px 0px rgba(91,178,250,0.26);
+  -moz-box-shadow: 0px 4px 17px 0px rgba(91,178,250,0.26);
+  box-shadow: 0px 4px 17px 0px rgba(91,178,250,0.26);
+}
+
+.stepbystep .btn-primary:hover {
+  background: #5bb2fa;
+  border-style: none;
+  -webkit-box-shadow: 0px 4px 17px 0px rgba(91,178,250,0.34);
+  -moz-box-shadow: 0px 4px 17px 0px rgba(91,178,250,0.34);
+  box-shadow: 0px 4px 17px 0px rgba(91,178,250,0.34);
+}
+
+.stepbystep .btn-primary:focus {
+  background: #5bb2fa;
+  border-style: none;
+  -webkit-box-shadow: 0px 4px 17px 0px rgba(91,178,250,0.34);
+  -moz-box-shadow: 0px 4px 17px 0px rgba(91,178,250,0.34);
+  box-shadow: 0px 4px 17px 0px rgba(91,178,250,0.34);
+}
+
+
 .stepwizard-row {
   display: table-row;
 }
@@ -8,6 +34,11 @@
   display: table;
   width: 50%;
   position: relative;
+}
+
+.guide {
+  max-width: 600px;
+  margin: auto;
 }
 
 @media only screen and (max-width: 991px) {
