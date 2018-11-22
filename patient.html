@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title></title>
+    <link rel="stylesheet" href="./sedas.css" />
+    <link rel="stylesheet" href="./css/all.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Shadows+Into+Light|Alegreya+Sans|Quicksand|Source+Sans+Pro"
+      rel="stylesheet"
+    />
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="grid-container">
+        <div class="sidebar">
+          <div class="logo">SEDAS</div>
+          <div class="sidebar-items">
+            <a href="./index.html"><i class="fas fa-user-md"></i> Start</a>
+          </div>
+          <div class="sidebar-items active">
+            <a href="./profile.html"
+              ><i class="far fa-user-circle"></i> Profile</a
+            >
+          </div>
+          <div class="sidebar-items">
+            <a href=""><i class="fas fa-capsules"></i> Dose</a>
+          </div>
+          <div class="sidebar-items">
+            <a href=""><i class="fas fa-star-half-alt"></i> Rating</a>
+          </div>
+          <div class="sidebar-items">
+            <a href=""><i class="fas fa-wrench"></i> About</a>
+          </div>
+        </div>
+        <div class="avator">
+          <img src="./assets/images/profile.jpg" alt="" />
+        </div>
+        <div class="patientName">
+          ${patientName}
+
+          <c:choose>
+            <c:when test="${patientGender=='male'}">
+              <span class="male"><i class="fas fa-mars"></i></span>
+            </c:when>
+            <c:otherwise>
+              <span class="female"><i class="fas fa-venus"></i></span>
+            </c:otherwise>
+          </c:choose>
+        </div>
+        <div class="age">
+          <div class="pro">age <span class="input">${patientAge}</span></div>
+          <div class="pro">ID <span class="input">${patientId}</span></div>
+        </div>
+        <div class="contact">
+          <div class="pro">Contact <span class="input">+888 88 888</span></div>
+          <div class="pro">
+            Address <span class="input">New York, NY 10000</span>
+          </div>
+        </div>
+        <div class="issue">
+          <h3>Health issues</h3>
+          <span class="time">NOV 19TH 04:51 PM</span>
+          <p>The patient need sedaton.</p>
+        </div>
+
+        <div class="sedation">
+          <div class="sedation-container">
+            <h1>Assistant</h1>
+            <div id="results">
+              <form method="POST" action="${contextPath}/dose">
+                <div class="result-panel-score">
+                  <div class="score"><i class="fas fa-poll-h"></i>SCORE</div>
+
+                  <p id="re-score">20</p>
+                  <input
+                    type="hidden"
+                    readonly="readonly"
+                    id="myscore"
+                    name="myscore"
+                  />
+                </div>
+                <div class="result-panel-risk">
+                  <div class="asa"><i class="fas fa-exclamation"></i>RISK</div>
+                  <p id="re-cat">III</p>
+                  <input
+                    type="hidden"
+                    readonly="readonly"
+                    id="mycategory"
+                    name="mycategory"
+                  />
+                </div>
+                <br />
+                <input
+                  id="calDose"
+                  type="hidden"
+                  name="dose"
+                  value="Calculate Dose"
+                />
+                <input
+                  type="hidden"
+                  name="${_csrf.parameterName}"
+                  value="${_csrf.token}"
+                />
+              </form>
+            </div>
+            <input
+              id="startEva"
+              type="submit"
+              name="score"
+              value="Evaluate"
+              onclick="myFunction()"
+            />
+          </div>
+
+          <div class="score-panel">
+            <h1>Background</h1>
+            <div id="tobacco" class="panel-item active">
+              <i class="fas fa-check-circle"></i> Tobacco
+            </div>
+            <div id="tobacco" class="panel-item active">
+              <i class="fas fa-check-circle"></i> Tobacco
+            </div>
+            <div id="tobacco" class="panel-item active">
+              <i class="fas fa-check-circle"></i> Tobacco
+            </div>
+            <div id="tobacco" class="panel-item active">
+              <i class="fas fa-check-circle"></i> Tobacco
+            </div>
+            <div id="tobacco" class="panel-item active">
+              <i class="fas fa-check-circle"></i> Tobacco
+            </div>
+            <div id="tobacco" class="panel-item active">
+              <i class="fas fa-check-circle"></i> Tobacco
+            </div>
+          </div>
+        </div>
+
+        <div class="blood active">
+          <span class="title">Blood Pressure</span>
+          <div class="read">
+            <i class="fas fa-heartbeat"></i>${patientBloodPres}<span
+              class="unit"
+              >mm/hg</span
+            >
+          </div>
+        </div>
+
+        <div class="hight active">
+          <span class="title">Height</span>
+          <div class="read">
+            <i class="fas fa-male"></i>${patientHeight}<span class="unit"
+              >cm</span
+            >
+          </div>
+        </div>
+
+        <div class="bmi active">
+          <span class="title">BMI</span>
+          <div class="read"><i class="far fa-smile"></i>${patientBmi}</div>
+        </div>
+
+        <div class="weight active">
+          <span class="title">weight</span>
+          <div class="read">
+            <i class="fas fa-weight"></i>${patientWeight}<span class="unit"
+              >lb</span
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function myFunction() {
+        document.getElementById("myscore").value = 20;
+        document.getElementById("mycategory").value = 50;
+
+        document.getElementById("startEva").style.display = "none";
+
+        document.getElementById("calDose").setAttribute("type", "submit");
+        //getting all the information from the textboxes
+        /*   /*
+
+      */
+        /*   //show the final score and level
+                 document.getElementById("drug")[0].innerHTML = "hello";
+                 document.getElementById("suggest")[0].innerHTML = "world"; */
+      }
+    </script>
+
+    <script>
+      $(document).ready(function() {
+        $("#startEva").click(function() {
+          $("#results").slideDown("slow");
+        });
+      });
+    </script>
+  </body>
+</html>

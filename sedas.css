@@ -4,6 +4,10 @@ body {
   color: #96a2ae;
 }
 
+#results {
+  display: none;
+}
+
 .issue h3 {
   color: #003156;
   font-family: "Alegreya Sans", sans-serif;
@@ -48,7 +52,6 @@ body {
   grid-row: 1/-1;
   padding-top: 60px;
   text-align: center;
-
 }
 
 .avator img {
@@ -73,7 +76,7 @@ body {
 .sedation {
   grid-column: 5 / span 1;
   grid-row: 1 / -1;
-  background: #FFFFFF;
+  background: #ffffff;
 }
 
 .age {
@@ -137,13 +140,21 @@ body {
     height: 100vh;
   }
 
+  body #re-score {
+    color: #ffffff;
+  }
+
+  body #re-cat {
+    color: #ffffff;
+  }
+
   body .stepbystep {
     grid-column: 1 / -1;
     grid-row: 2 / -1;
     margin: 50px auto;
   }
 
-    body .sidebar {
+  body .sidebar {
     grid-column: 1 / span 3;
     grid-row: 1;
   }
@@ -242,7 +253,7 @@ body {
   body .sedation {
     grid-column: 3 / span 1;
     grid-row: 1 / -1;
-    background: #1F194D;
+    background: #1f194d;
   }
 }
 
@@ -256,7 +267,18 @@ body {
     height: 100vh;
   }
 
-body .blood.active, body .hight.active, body .bmi.active, body .weight.active {
+  body #re-score {
+    color: #ffffff;
+  }
+
+  body #re-cat {
+    color: #ffffff;
+  }
+
+  body .blood.active,
+  body .hight.active,
+  body .bmi.active,
+  body .weight.active {
     padding-top: 25px;
     box-shadow: none;
   }
@@ -349,22 +371,18 @@ body .blood.active, body .hight.active, body .bmi.active, body .weight.active {
     padding: 10px;
   }
 
-    body .blood.active:hover,
-    {
-      box-shadow: none;
-    }
-    body .hight.active:hover
-    {
-      box-shadow: none;
-    }
-    body .bmi.active:hover
-    {
-      box-shadow: none;
-    }
-    body .weight.active:hover
-    {
-      box-shadow: none;
-    }
+  body .blood.active:hover {
+    box-shadow: none;
+  }
+  body .hight.active:hover {
+    box-shadow: none;
+  }
+  body .bmi.active:hover {
+    box-shadow: none;
+  }
+  body .weight.active:hover {
+    box-shadow: none;
+  }
   body .hight {
     grid-column: 1 / 1;
     grid-row: 8 / 9;
@@ -392,7 +410,7 @@ body .blood.active, body .hight.active, body .bmi.active, body .weight.active {
   body .sedation {
     grid-column: 1 / 1;
     grid-row: 11 / 12;
-    background: #1F194D;
+    background: #1f194d;
   }
 }
 
@@ -540,23 +558,37 @@ body .blood.active, body .hight.active, body .bmi.active, body .weight.active {
 
 .score {
   color: #ffffff;
-  background-color: #ff0000;
+  background-color: #008cff;
   font-size: 10px;
   font-weight: 500;
   padding: 2px 4px;
   width: 60px;
   margin: auto;
-  margin-top: 30px;
+  margin-top: 10px;
   margin-bottom: 20px;
   border-radius: 4px;
 }
 
-.score i {
+.asa {
+  color: #ffffff;
+  background-color: #ff8800;
+  font-size: 10px;
+  font-weight: 500;
+  padding: 2px 4px;
+  width: 60px;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+}
+
+.score i,
+.asa i {
   margin-right: 5px;
 }
 
 #drug {
-  color: #ADADAD;
+  color: #adadad;
   letter-spacing: 4px;
   font-size: 12px;
   font-weight: 500;
@@ -569,7 +601,7 @@ body .blood.active, body .hight.active, body .bmi.active, body .weight.active {
   font-weight: 500;
   text-align: center;
   margin-top: 12px;
-  color: #A9E322;
+  color: #a9e322;
 }
 
 .blood i {
@@ -578,17 +610,20 @@ body .blood.active, body .hight.active, body .bmi.active, body .weight.active {
 }
 
 .blood.active {
-  border-style:none;
-  -webkit-box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.1);
-  -moz-box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.1);
-  box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.1);
+  border-style: none;
+  -webkit-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.1);
   margin: 6px;
 }
 
-.blood.active:hover, .bmi.active:hover, .weight.active:hover, .hight.active:hover {
-  -webkit-box-shadow: 0px 32px 72px -15px rgba(0,0,0,0.2);
-  -moz-box-shadow: 0px 32px 72px -15px rgba(0,0,0,0.2);
-  box-shadow: 0px 32px 72px -15px rgba(0,0,0,0.2);
+.blood.active:hover,
+.bmi.active:hover,
+.weight.active:hover,
+.hight.active:hover {
+  -webkit-box-shadow: 0px 32px 72px -15px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 32px 72px -15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 32px 72px -15px rgba(0, 0, 0, 0.2);
 }
 
 .title {
@@ -611,10 +646,10 @@ body .blood.active, body .hight.active, body .bmi.active, body .weight.active {
 }
 
 .bmi.active {
-  border-style:none;
-  -webkit-box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.1);
-  -moz-box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.1);
-  box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.1);
+  border-style: none;
+  -webkit-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.1);
   margin: 6px;
 }
 
@@ -624,10 +659,10 @@ body .blood.active, body .hight.active, body .bmi.active, body .weight.active {
 }
 
 .hight.active {
-  border-style:none;
-  -webkit-box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.1);
-  -moz-box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.1);
-  box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.1);
+  border-style: none;
+  -webkit-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.1);
   margin: 6px;
 }
 
@@ -637,15 +672,15 @@ body .blood.active, body .hight.active, body .bmi.active, body .weight.active {
 }
 
 .weight.active {
-  border-style:none;
-  -webkit-box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.1);
-  -moz-box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.1);
-  box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.1);
+  border-style: none;
+  -webkit-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.1);
   margin: 6px;
 }
 
-#suggest + input[type="submit"] {
-  margin-top: 40px;
+#startEva {
+  margin-top: 30px;
   padding: 12px 10px;
   background: #0078f8;
   border: 0 none;
@@ -657,6 +692,62 @@ body .blood.active, body .hight.active, body .bmi.active, body .weight.active {
   border-radius: 4px;
 }
 
-#suggest + input[type="submit"]:hover {
+#startEva:hover {
   background: #248cfc;
+}
+
+input[id="myscore"] {
+  border-style: none;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  text-align: center;
+  font-size: 30px;
+}
+
+input[id="mycategory"] {
+  border-style: none;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+#re-score {
+  font-size: 90px;
+  padding-bottom: 20px;
+}
+
+#re-cat {
+  font-size: 60px;
+  padding-bottom: 20px;
+}
+
+.result-panel-score {
+  border: 1px solid #ffffff17;
+  margin: 30px auto;
+  border-radius: 8px;
+  -webkit-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.1);
+}
+
+.result-panel-risk {
+  border: 1px solid #ffffff17;
+  margin: 30px auto;
+  border-radius: 8px;
+  -webkit-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.1);
+}
+
+#calDose {
+  margin-top: 30px;
+  margin-bottom: 40px;
+  padding: 12px 10px;
+  background: #750c8f;
+  border: 0 none;
+  cursor: pointer;
+  color: #ffffff;
+  text-transform: uppercase;
+  width: 100%;
+  font-size: 12px;
+  border-radius: 4px;
 }
